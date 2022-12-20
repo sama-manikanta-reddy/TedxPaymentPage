@@ -1,0 +1,373 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* MY STYLES */
+
+body {
+    background-image: linear-gradient(176deg, black 50% , red);
+    /* background-color: rgb(250, 227, 225); */
+    height: 100vh;
+}
+
+header {
+    background-color:black;
+    padding: 0.6rem 0rem 0.6rem 0.5rem;
+}
+.profilepic{
+    background: white;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+h1 {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: red;
+    letter-spacing: -2px;
+}
+#nitw{
+    color: white;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+#signinbtn ,#profilelog{
+    color: white;
+    font-size: 1.2rem;
+    float: right;
+    margin-right: 0.5rem;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-top: 0.4rem;
+}
+
+#signinbtn:hover, #profilelog{
+    cursor: pointer;
+    color: red;
+}
+
+#PaymentForm ,.page2{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    min-height: 474.297px;
+    min-width: 261px;
+}
+
+#UserLogin,
+#EndPage,
+#PaymentInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35%;
+    height: 50%;
+    border-top: 0.7rem rgb(219, 68, 55) solid;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    min-height: 382.852px;
+    min-width: 220.5px;
+}
+
+h2 {
+    align-self: baseline;
+    justify-self: flex-start;
+    font-size: 1.7rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #ca1e1e;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    align-self: center;
+    width: 95%;
+    height: 70%;
+}
+
+label,
+input[type="email"],
+input[type="password"],h3 {
+    justify-self: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+label {
+    color: #868686;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 90%;
+    border: 0 #f7f7f7 solid;
+    border-bottom: 2px #cc1111 solid;
+    font-size: 1.5rem;
+    outline: none;
+    padding-top: 0.2rem;
+}
+
+#nextpagebtn,
+#pay,
+#endbtn {
+    font-size: 1.5rem;
+    width: min-content;
+    align-self: center;
+    justify-self: flex-end;
+    margin: 1rem 0 0.5rem 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 8px 24px;
+    background-color: rgb(219, 68, 55);
+    color: white;
+    border-radius: 4px;
+    border-width: 0;
+}
+
+#nextpagebtn,
+#pay,
+#endbtn:hover {
+    cursor: pointer;
+}
+
+#PaymentInfo {
+    width: 50%;
+    height: 65%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+.page2{
+    width: 100%;
+}
+.option > label{
+    color: black;
+}
+#paymentmethod {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.payoptions,.Radiocontainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 30%;
+    min-width: 183px;
+    height: 100%;
+    align-content: flex-start;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.Radiocontainer{
+    border: #5f5f5f 1px solid;
+    border-radius: 10px;
+    padding-left: 0.5rem;
+    background-color: #f8f8f8;
+}
+.paymethod{
+    height: 90%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+section > label{
+    color: #404040;
+}
+select{
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+#pay {
+    width: max-content;
+}
+
+#EndPage {
+    width: 50%;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    height: 50vh;
+    min-height: 270px;
+}
+
+#ticketmsg {
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+#endbtn {
+    align-self: center;
+    width: max-content;
+}
+.paylabel{
+    font-size: 1.2rem;
+    color: black;
+}
+
+#inputUPI{
+    font-size: 1.2rem;
+    border: 1px #5f5f5f solid;
+    border-radius: 10px;
+    outline: none;
+    padding: 0.5rem 0.1rem;
+    text-align: center;
+}
+.UPIcontainer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    height: 85%;
+    width: 70%;
+}
+#CVV{
+    all:revert;
+    width: 64px;
+    font-size: 1.2rem;
+    outline: none;
+}
+#CVVbox{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 0.5rem;
+}
+#Card{
+    width: 320px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    background: #c4c4c4;
+}
+#CardNo{
+    margin: 0rem 0.5rem;
+    outline: none;
+    font-size: 1.2rem;
+}
+#bar{
+    width: 240px;
+    margin-left: 0.5rem;
+    background-color: #404040;
+}
+#ExpiryDate{
+    margin:0rem 0.5rem;
+    font-size: 1.2rem;
+}
+@media(max-width:950px) {
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-wrap: nowrap;
+    }
+    h1 {
+        display: inline-block;
+        text-align: center;
+    }
+
+    #profilelog{
+        width: 72px;
+    }
+
+    #signinbtn {
+        display: none;
+    }
+
+    #UserLogin {
+        width: 50%;
+        height: 40%;
+    }
+
+    #EndPage {
+        width: 50%;
+        height: 25%;
+    }
+
+    #tick {
+        display: none;
+    }
+    #paymentmethod{
+        flex-direction: column;
+        height: 65%;
+    }
+    #PaymentInfo{
+        height: 85%;
+    }
+    #Card{
+        width: auto;
+        min-width: 240px;
+    }
+    #bar{
+        width: auto;
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="App.css">
+    <title>TEDxNITW-User Login</title>
+</head>
+
+<body>
+    <header>
+        <h1>TED<sup>x</sup> <span id="nitw"> NITW</span> </h1>
+        <button id="signinbtn">SIGN IN</button>
+    </header>
+    <form id="PaymentForm">
+        <div id="UserLogin">
+            <h2>Login for payment</h2>
+            <div class="data">
+                <div class="email ">
+                    <label for="email" style="display:none;" id="email-label">Email Id</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="password ">
+                    <label for="password" style="display:none;" id="password-label">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                </div>
+            </div>
+            <button type="submit" id="nextpagebtn">LOGIN</button>
+        </div>
+        <div id="EndPage" style="display: none;">
+            <svg id="tick" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 512 512">
+                <path
+                    d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm-32.1 281.7c-2.4 2.4-5.8 4.4-8.8 4.4s-6.4-2.1-8.9-4.5l-56-56 17.8-17.8 47.2 47.2L340 177.3l17.5 18.1-133.6 134.3z" />
+            </svg>
+            <div id="ticketmsg">
+                <div class="refno">
+                    Your payment was successful, here is your ticket number <span style="font-weight : 900"
+                        id="ticketno"></span>.
+                </div>
+                <div class="ticket">
+                    Your ticket was sent to your email, enjoy the show.
+                </div>
+            </div>
+
+            <button type="submit" id="endbtn"> Log out </button>
+        </div>
+    </form>
+    <div class="page2" style="display: none;">
+        <div id="PaymentInfo">
+            <h2>Choose your payment method</h2>
+            <div id="ticketcounter">
+                <section>
+                    <label for="maxTickets">Number of Tickets : </label>
+                    <select name="maxTickets" id="maxTickets">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section>
+            </div>
+            <div id="paymentmethod">
+                <div class="payoptions">
+                    <div class="option">
+                        <input type="radio" name="payment" id="UPI" value="UPI" class="radioOpt" checked>
+                        <label for="UPI">UPI</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" name="payment" id="MobileWallets" value="MobileWallets" class="radioOpt">
+                        <label for="MobileWallets">Mobile Wallets</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" name="payment" id="NetBanking" value="NetBanking" class="radioOpt">
+                        <label for="NetBanking">Net Banking</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" name="payment" id="Cards" value="Cards" class="radioOpt">
+                        <label for="Cards">Debit Card</label>
+                    </div>
+                </div>
+                <div class="paymethod">
+
+                </div>
+            </div>
+            <h3>Amount Payable : <span id="amount" style="color: red;"> </span></h3>
+            <button type="submit" id="pay" disabled>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-shield-lock-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm0 5a1.5 1.5 0 0 1 .5 2.915l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99A1.5 1.5 0 0 1 8 5z" />
+                </svg> PAY</button>
+        </div>
+    </div>
+
+    <script src="App.js"></script>
+</body>
+
+</html>
